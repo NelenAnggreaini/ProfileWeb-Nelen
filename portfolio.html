@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Nelen Anggreaini</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Nelen Anggreaini</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section class="portfolio">
+    <h1>My Portfolio</h1>
+    <p>Berikut proyek yang telah saya kerjakan selama perkuliahan, yaitu website sederhana untuk memenuhi mata kuliah grafika komputer dan pemrograman web</p>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="web_grafkom .png" alt="Project Web Grafkom">
+        <h3>Website Grafika Komputer</h3>
+        <p>Proyek ini saya buat menggunakan HTML dan CSS sebagai latihan dasar pembuatan halaman web statis yang menampilkan informasi seputar grafika komputer.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="webprofile.png" alt="Project Web Portofolio">
+        <h3>Website Pribadi</h3>
+        <p>Website ini merupakan tugas UTS Pemrograman Web menggunakan HTML5, CSS3, dan JavaScript dengan fitur dark mode, validasi form, dan tampilan responsif.</p>
+      </div>
+    </div>
+      </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Kalau kamu ingin mengenal lebih jauh, kirim pesan melalui form di bawah ini 👇.</p>
+    <form id="contact-form">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <p id="statusmessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Nelen Anggreaini</p>
+  </footer>
+  
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+</body>
+</html>
